@@ -22,7 +22,7 @@ public abstract sealed class FieldCreatorImpl extends ModifiableCreatorImpl impl
     final ClassDesc owner;
     final String name;
     final TypeCreatorImpl tc;
-    GenericType genericType = GenericType.of(CD_int);
+    GenericType genericType = GenericType.INT;
     private FieldDesc desc;
 
     public FieldCreatorImpl(final ClassDesc owner, final String name, final TypeCreatorImpl tc) {

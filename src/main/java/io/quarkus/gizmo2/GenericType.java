@@ -42,6 +42,10 @@ import io.smallrye.common.constraint.Assert;
  * and raw types (generic class types without type arguments).
  */
 public abstract class GenericType {
+
+    public static final GenericType VOID = GenericType.of(CD_void);
+    public static final GenericType INT = GenericType.of(CD_int);
+
     final List<Annotation> visible;
     final List<Annotation> invisible;
     OfArray arrayType;

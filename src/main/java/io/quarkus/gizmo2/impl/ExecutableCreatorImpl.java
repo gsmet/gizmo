@@ -133,7 +133,7 @@ public sealed abstract class ExecutableCreatorImpl extends ModifiableCreatorImpl
     public GenericType genericReturnType() {
         GenericType returnType = this.genericReturnType;
         if (returnType == null) {
-            return GenericType.of(CD_void);
+            return GenericType.VOID;
         }
         return returnType;
     }
